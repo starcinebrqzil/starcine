@@ -112,21 +112,20 @@ export default function App() {
             >
               {/* Inner screen content */}
               <div className="w-full h-full rounded-[32px] overflow-hidden bg-black relative group shadow-[inset_0_0_20px_rgba(0,0,0,0.8)]">
-                <iframe
-                  className="w-[100%] h-[100%] border-0 scale-[1.3] origin-center"
-                  src="https://www.youtube.com/embed/D2poyo-xTLg?autoplay=1&mute=0&loop=1&playlist=D2poyo-xTLg&controls=0&modestbranding=1&rel=0&showinfo=0&iv_load_policy=3&disablekb=1&fs=0&origin=http://localhost:3000"
-                  title="StarCine Experience"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                ></iframe>
+                <img 
+                  src="https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?auto=format&fit=crop&q=80&w=800" 
+                  alt="StarCine Banner" 
+                  className="w-full h-full object-cover opacity-90"
+                />
                 
                 {/* Visual Glass Overlay */}
-                <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-black/80 via-transparent to-transparent" />
                 
                 {/* Branding overlay */}
                 <div className="absolute inset-0 p-4 flex flex-col justify-end text-center pointer-events-none">
                    <div className="bg-black/60 backdrop-blur-md rounded-xl p-3 border border-white/10">
-                      <p className="text-[10px] text-zinc-400 uppercase tracking-widest mb-1">Experiência Premium</p>
-                      <p className="text-sm font-bold uppercase italic text-gold">TV Digital 4K</p>
+                      <p className="text-[10px] text-zinc-400 uppercase tracking-widest mb-1 font-bold">4K ULTRA HD</p>
+                      <p className="text-sm font-bold uppercase italic text-gold">Experiência StarCine</p>
                    </div>
                 </div>
               </div>
